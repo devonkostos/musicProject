@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+
+<html>
+    
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline' data:; style-src * 'self' 'unsafe-inline'; media-src *" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="msapplication-tap-highlight" content="no" />
+    <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
+    <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/mainAppStyles.css">
+    <script type="text/javascript" src="cordova.js"></script>
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/main.js"></script>
+    <title>MusicProject</title>
+</head>
+    
+<body>
+<div id="container">
+    <h2>Music Player</h2>
+    <audio id="player">
+        <source src="assets/alla_turca.mp3" />
+    </audio>
+    <button id="btnPlay">Play</button>
+    <button id="btnPause">Pause</button>
+    <button id="btnStop">Stop</button>
+    <label for="rngVolume">Volume</label>
+    <input type="range" id="rngVolume" min="0" max="1" step=".01" value='.5' data-highlight="true" onchange="changeVolume()" />
+    <ul data-role="listview" data-inset="true">
+        <li data-role="list-divider">Songs</li>
+        <li><a href="#" id="allaturca" onclick="changeSong('alla_turca')">Alla Turca</a></li>
+        <li><a href="#" id="furelise" onclick="changeSong('fur_elise')">Fur Elise</a></li>
+        <li><a href="#" id="sugarplum" onclick="changeSong('sugar_plum_fairy')">Sugar Plum Fairy</a></li>
+    </ul>
+    <div id="image"></div>
+    <div data-role="footer" data-position="fixed">
+        <output id="timeOut">Elapsed Time:</output>
+    </div>
+</div>
+    
+</body>
+
+</html>

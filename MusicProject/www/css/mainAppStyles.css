@@ -1,0 +1,33 @@
+#container{
+    margin: 3px;
+}
+h2{
+    text-align: center;
+}
+#container ul li a:focus{
+    border: 5px solid red; 
+}
+#mozart{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+#beethoven{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
+#tchaikovsky{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    padding-top: 18px;
+    padding-bottom: 18px;
+}
